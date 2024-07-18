@@ -1,7 +1,7 @@
 import os
 import torch
-from data_provider import Stage1KVPLMDM
-from model.blip2_stage1 import Blip2Stage1  # Replace with the actual model import
+import data_provider.loader as loader
+import model.blip2_stage1 as Blip2Stage1  
 
 def evaluate_checkpoint(checkpoint_path, data_loader):
     # Load model from checkpoint
