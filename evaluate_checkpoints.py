@@ -1,7 +1,7 @@
 import os
 import torch
-import data_provider.loader as loader
-import model.blip2_stage1 as Blip2Stage1  
+from data_provider.stage1_dm import Stage1DM
+from model.blip2_stage1 import Blip2Stage1  
 
 def evaluate_checkpoint(checkpoint_path, data_loader):
     # Load model from checkpoint
